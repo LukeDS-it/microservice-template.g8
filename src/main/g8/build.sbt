@@ -58,3 +58,5 @@ lazy val root = (project in file("."))
     ),
     libraryDependencies ++= akkaDependencies ++ baseDependencies ++ customDependencies
   )
+
+addCommandAlias("integration", ";clean;compile;docker:publishLocal;it:test;")
