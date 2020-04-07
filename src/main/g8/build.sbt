@@ -1,15 +1,15 @@
-val akkaVersion = "2.6.1"
+val akkaVersion = "2.6.4"
 val akkaHttpVersion = "10.1.11"
-val akkaHttpCirceVersion = "1.30.0"
-val pureconfigVersion = "0.12.2"
+val akkaHttpCirceVersion = "1.31.0"
+val pureconfigVersion = "0.12.3"
 val scalaLoggingVersion = "3.9.2"
 val logbackVersion = "1.2.3"
 val logstashLogbackEncoderVersion = "5.2"
-val scalatestVersion = "3.1.0"
-val scalamockVersion = "4.4.0"
-val testcontainersVersion = "1.12.4"
-val testcontainersScalaVersion = "0.34.2"
-val circeVersion = "0.12.3"
+val scalatestVersion = "3.1.1"
+val scalatestMockitoVersion = "1.0.0-M2"
+val testcontainersVersion = "1.13.0"
+val testcontainersScalaVersion = "0.36.1"
+val circeVersion = "0.13.0"
 val janinoVersion = "3.1.0"
 
 val akkaDependencies = Seq(
@@ -33,7 +33,7 @@ val baseDependencies = Seq(
   "org.codehaus.janino" % "janino" % janinoVersion,
   "net.logstash.logback" % "logstash-logback-encoder" % logstashLogbackEncoderVersion,
   "org.scalatest" %% "scalatest" % scalatestVersion % "test,it",
-  "org.scalamock" %% "scalamock" % scalamockVersion % "test,it",
+  "org.scalatestplus" %% "scalatestplus-mockito" % scalatestMockitoVersion,
   "org.testcontainers" % "testcontainers" % testcontainersVersion % "it",
   "com.dimafeng" %% "testcontainers-scala" % testcontainersScalaVersion % "it"
 )

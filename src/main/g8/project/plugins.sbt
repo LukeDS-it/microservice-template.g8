@@ -6,3 +6,5 @@ addSbtPlugin("com.tapad" % "sbt-docker-compose" % "1.0.34")
 
 addSbtPlugin("org.scoverage" % "sbt-scoverage" % "1.5.1")
 
+addSbtPlugin("org.scalameta" % "sbt-scalafmt" % "2.3.2")
+
